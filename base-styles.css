@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    background: #fafafa;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: 1.8rem;
+}

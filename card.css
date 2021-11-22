@@ -1,0 +1,72 @@
+:root{
+    --color: red;
+}
+
+article.card{
+    position: relative;
+    background: white;
+    margin-bottom: 2rem;
+    box-shadow:0 7px 30px -10px rgba(150,170,180,0.5);
+}
+
+.card-body{
+    padding: 1rem;
+}
+
+h2{
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+article.card:hover .title{
+    color: var(--color)
+}
+
+.meta-info{
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 700;
+    color: #42465a;
+}
+
+.meta-info .author::after{
+    content: "-";
+    margin: 0 0.5rem;
+    color:#bbb;
+}
+
+.published-date{
+    color: var(--color);
+}
+
+.category{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--color);
+    color: white;
+    padding: 0.2rem 1rem;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-radius: 45px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+
+}
+
+@media (min-width: 768px){
+    main.cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article.card{
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 992px){
+    article.card{
+        flex: 0 1 calc(33.33% - 1rem);
+    }
+}
